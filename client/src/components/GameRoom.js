@@ -73,7 +73,6 @@ export default function GameRoom() {
         }
 
         return () => {
-            alert('hello')
             undoStates()
             sessionStorage.removeItem('chessStreaming')
             socket.current.close()
