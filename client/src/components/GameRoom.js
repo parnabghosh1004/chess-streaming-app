@@ -6,7 +6,7 @@ import '../css/GameRoom.css'
 import Peer from 'simple-peer'
 
 export default function GameRoom() {
-    const ENDPOINT = "http://localhost:4000"
+    const ENDPOINT = "/"
     const { roomID } = useParams()
     const [id, setId] = useState('')
     const [players, setPlayers] = useState({})
