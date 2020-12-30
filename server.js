@@ -2,15 +2,12 @@ const express = require('express')
 const app = express()
 const server = require('http').createServer(app)
 const socketio = require('socket.io')
-const cors = require('cors')
 const path = require('path')
 const { v4 } = require('uuid')
 const port = process.env.PORT || 4000
 
-app.use(cors())
 app.use(express.json())
 const io = socketio(server)
-
 
 const rooms = {}
 let counter = 0
