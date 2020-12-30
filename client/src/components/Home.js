@@ -11,7 +11,7 @@ function Login() {
 
         const name = inputRef.current.value
 
-        fetch('http://localhost:4000/join', {
+        fetch('/join', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
